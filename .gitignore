@@ -106,3 +106,9 @@ replay_pid*
 #aoc
 resources
 
+/.idea/aoc.iml
+/.idea/git_toolbox_blame.xml
+/.idea/git_toolbox_prj.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml

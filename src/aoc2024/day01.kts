@@ -2,7 +2,7 @@ import kotlin.io.path.Path
 import kotlin.io.path.readLines
 import kotlin.math.abs
 
-Path("../resources/aoc2024/day01").readLines().let { lines ->
+Path("../../resources/aoc2024/day01").readLines().let { lines ->
     lines.map {
         it.substringBefore("   ").toLong() to it.substringAfter("   ").toLong()
     }.unzip().let { (first, second) ->
