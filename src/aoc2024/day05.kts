@@ -12,18 +12,8 @@ Path("../../resources/aoc2024/day05").readLines().let { lines ->
                 when {
                     index != cIndex -> {
                         when {
-                            index < cIndex -> {
-                                rules.any { it.first == num && it.second == cNum }.let {
-                                    it
-                                }
-                            }
-
-                            index > cIndex -> {
-                                rules.any { it.first == cNum && it.second == num }.let {
-                                    it
-                                }
-                            }
-
+                            index < cIndex -> rules.any { it.first == num && it.second == cNum }
+                            index > cIndex -> rules.any { it.first == cNum && it.second == num }
                             else -> false
                         }
                     }
